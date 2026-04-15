@@ -61,7 +61,8 @@ Nenhum impedimento identificado no momento.
 - Concluir os estudos atribuídos a cada integrante  
 - Aplicar os conhecimentos no contexto do projeto  
 - Evoluir a prototipação no Figma  
-- Organizar e documentar os resultados no repositório  
+- Organizar e documentar os resultados no repositório
+- Definir os papéis de Scrum Master e Product Owner
 
 ---
 
