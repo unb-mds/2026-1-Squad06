@@ -23,12 +23,12 @@ Dar continuidade à estruturação do projeto, aprofundando estudos técnicos e 
 
 Distribuição das atividades da Sprint 01:
 
-- [ ] APIs – Edvaldo  
-- [ ] Docker – Otávio  
-- [ ] Figma – Clara  
-- [ ] Estudo sobre sites e fontes para mineração de dados – Lucas  
-- [ ] Scrum – Gabriella  
-- [ ] Product Owner – João Paulo  
+- [x] APIs – Edvaldo  
+- [x] Docker – Otávio  
+- [x] Figma – Clara  
+- [x] Estudo sobre sites e fontes para mineração de dados – Lucas  
+- [x] Scrum – Gabriella  
+- [x] Product Owner – João Paulo  
 
 Prazo definido: até segunda-feira.
 
