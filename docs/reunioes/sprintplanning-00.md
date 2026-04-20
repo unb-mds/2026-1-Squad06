@@ -23,12 +23,12 @@ Organizar a estrutura inicial do projeto, definir responsabilidades entre os int
 
 Cada integrante ficou responsável por uma issue de estudo:
 
-- [ ] Git – Otávio  
-- [ ] Metodologias Ágeis – João Paulo  
-- [ ] Requisitos – Clara  
-- [ ] Tecnologias Front-end – Gabriella  
-- [ ] Tecnologias Back-end – Lucas  
-- [ ] Arquitetura – Edvaldo  
+- [x] Git – Otávio  
+- [x] Metodologias Ágeis – João Paulo  
+- [x] Requisitos – Clara  
+- [x] Tecnologias Front-end – Gabriella  
+- [x] Tecnologias Back-end – Lucas  
+- [x] Arquitetura – Edvaldo  
 
 Prazo definido: até o final do final de semana.
 
