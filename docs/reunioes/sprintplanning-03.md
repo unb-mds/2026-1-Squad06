@@ -113,14 +113,14 @@ Cada etapa é independente, permitindo desenvolvimento simultâneo entre os inte
 
 
 ### 🟥 Visualização (Responsável: Clara)
-- [ ] Criar dashboard inicial com Streamlit  
-- [ ] Implementar layout básico (sidebar + conteúdo)  
-- [ ] Utilizar dados simulados (mock) para desenvolvimento inicial  
-- [ ] Criar gráficos iniciais:
+- [X] Criar dashboard inicial com Streamlit  
+- [X] Implementar layout básico (sidebar + conteúdo)  
+- [X] Utilizar dados simulados (mock) para desenvolvimento inicial  
+- [X] Criar gráficos iniciais:
   - Proposições por categoria  
   - Evolução ao longo do tempo  
   - Ranking de parlamentares  
-- [ ] Preparar integração futura com banco de dados  
+- [X] Preparar integração futura com banco de dados  
 
 
 **Entrega esperada:**
