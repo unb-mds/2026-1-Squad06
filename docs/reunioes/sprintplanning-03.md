@@ -1,4 +1,4 @@
-# 📅 Sprint Planning – Sprint 02
+# 📅 Sprint Planning – Sprint 03
 
 
 ## 📆 Data
