@@ -44,7 +44,7 @@ Cada etapa é independente, permitindo desenvolvimento simultâneo entre os inte
 ## 📋 Tarefas definidas por área
 
 
-### 🟦 Coleta (Responsável: Lucas e João Paulo)
+### 🟦 Coleta (Responsável: Lucas, João Paulo e Otávio)
 - [ ] Implementar script para consumir APIs da Câmara e Senado  
 - [ ] Realizar requisições HTTP com requests  
 - [ ] Coletar dados de proposições legislativas  
@@ -75,7 +75,7 @@ Cada etapa é independente, permitindo desenvolvimento simultâneo entre os inte
 ---
 
 
-### 🟪 Classificação (Responsável: Gabriella)
+### 🟪 Classificação (Responsável: Gabriella e Otávio)
 - [ ] Ler `dados_filtrados.json`  
 - [ ] Definir categorias do projeto:
   - Cyberbullying  
