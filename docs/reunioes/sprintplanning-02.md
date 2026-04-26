@@ -21,10 +21,10 @@ Estruturar as bases do projeto, definindo requisitos, organização do time, tec
 
 ## 📋 Tarefas definidas
 
-- [ ] Estudo sobre Story Mapping  
-- [ ] Levantamento dos requisitos do projeto  
-- [ ] Definição dos papéis do time (Scrum Master e Product Owner)  
-- [ ] Decisão das tecnologias a serem utilizadas  
+- [X] Estudo sobre Story Mapping  
+- [X] Levantamento dos requisitos do projeto  
+- [X] Definição dos papéis do time (Scrum Master e Product Owner)  
+- [X] Decisão das tecnologias a serem utilizadas  
 - [ ] Criação de protótipo de baixa fidelidade  
 
 ---
