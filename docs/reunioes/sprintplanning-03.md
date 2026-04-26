@@ -44,7 +44,7 @@ Cada etapa é independente, permitindo desenvolvimento simultâneo entre os inte
 ## 📋 Tarefas definidas por área
 
 
-### 🟦 Coleta (Responsável: Lucas, João Paulo e Otávio)
+### 🟦 Coleta (Responsável: Lucas e João Paulo)
 - [ ] Implementar script para consumir APIs da Câmara e Senado  
 - [ ] Realizar requisições HTTP com requests  
 - [ ] Coletar dados de proposições legislativas  
