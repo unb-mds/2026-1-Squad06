@@ -97,11 +97,11 @@ Cada etapa é independente, permitindo desenvolvimento simultâneo entre os inte
 
 
 ### 🟧 Armazenamento (Responsável: Edvaldo)
-- [ ] Configurar banco PostgreSQL (Docker)  
-- [ ] Criar tabela `proposicoes`  
-- [ ] Definir estrutura de dados (id, ementa, autor, categoria, etc.)  
-- [ ] Implementar conexão Python com banco (psycopg2)  
-- [ ] Inserir dados classificados no banco  
+- [X] Configurar banco PostgreSQL (Docker)  
+- [X] Criar tabela `proposicoes`  
+- [X] Definir estrutura de dados (id, ementa, autor, categoria, etc.)  
+- [X] Implementar conexão Python com banco (psycopg2)  
+- [X] Inserir dados classificados no banco  
 
 
 **Entrega esperada:**
