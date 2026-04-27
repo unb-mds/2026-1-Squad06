@@ -45,7 +45,7 @@ Coleta → Filtro → Classificação → Armazenamento → Visualização
 ## 🟦 Coleta
 Responsáveis: Lucas e João Paulo 
 **Atividades**
-[ ] Revisar o script de coleta implementado;
+- [ ] Revisar o script de coleta implementado;
 [ ] Garantir consumo correto das APIs;
 [ ] Melhorar estrutura dos dados retornados;
 [ ] Padronizar nomes dos campos;
