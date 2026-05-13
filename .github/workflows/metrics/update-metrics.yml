@@ -1,0 +1,48 @@
+# .github/workflows/metrics/update-metrics.yml
+# Atualiza métricas sempre que houver push em dev-projeto ou estudos.
+ 
+name: Update Productivity Metrics
+ 
+on:
+  push:
+    branches:
+      - dev-projeto
+      - estudos
+  workflow_dispatch:   # permite execução manual pelo painel do GitHub
+ 
+permissions:
+  contents: write      # necessário para commitar o metrics.json
+ 
+jobs:
+  collect-and-publish:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout repositório completo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # histórico completo das duas branches
+ 
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+ 
+      - name: Instalar dependências
+        run: |
+          pip install --upgrade pip
+          pip install PyGithub
+ 
+      - name: Executar coletor de métricas
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python .github/workflows/metrics/collect_metrics.py
+ 
+      - name: Commitar metrics.json atualizado
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/productivity/metrics.json
+          git diff --cached --quiet || git commit -m "chore: update productivity metrics [skip ci]"
+          git push
