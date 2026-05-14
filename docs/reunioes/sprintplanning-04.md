@@ -128,17 +128,17 @@ Responsável: Clara
 
 **Atividades**
 
-* [ ] Revisar dashboard inicial;
-* [ ] Melhorar layout (organização visual);
-* [ ] Ajustar gráficos existentes;
-* [ ] Garantir funcionamento com dados simulados;
-* [ ] Preparar função futura para leitura do banco;
-* [ ] Organizar código (separar funções, limpeza).
+* [X] Revisar dashboard inicial;
+* [X] Melhorar layout (organização visual);
+* [X] Ajustar gráficos existentes;
+* [X] Garantir funcionamento com dados simulados;
+* [X] Preparar função futura para leitura do banco;
+* [X] Organizar código (separar funções, limpeza).
 
 **Entrega esperada**
 
-* [ ] Dashboard mais organizado e funcional;
-* [ ] Interface pronta para integração com dados reais.
+* [X] Dashboard mais organizado e funcional;
+* [X] Interface pronta para integração com dados reais.
 
 ---
 
