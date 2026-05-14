@@ -54,47 +54,10 @@ O projeto busca apoiar análises sobre segurança digital, legislação e polít
 
 ```text
 2026-1-Guard.IA
-│
-├── armazenamento/
-├── classificacao/
-├── coleta/
+├── .github/workflows/
 ├── dashboard/
 ├── docs/
 ├── filtro/
-├── scripts/
-├── .github/workflows/
-├── README.md
-
-## GitHub Pages
-
-O projeto utiliza GitHub Pages para publicação da documentação e dashboard de produtividade.
-
-## Acesso
-https://unb-mds.github.io/2026-1-Guard.IA/
-Dashboard de produtividade
-
-## A página de produtividade apresenta métricas reais do repositório, atualizadas automaticamente via GitHub Actions.
-
-## Métricas exibidas
-Total de commits
-Issues abertas e fechadas
-Pull requests
-Ranking de committers
-Evolução das sprints
-Métricas de produtividade da equipe
-Metodologia
-
-## O desenvolvimento segue práticas de:
-
-Scrum
-Git Flow
-Pull Requests
-Versionamento por branches
-Integração contínua
-Equipe
-
-Projeto desenvolvido pela equipe da disciplina MDS/UnB.
-
-## Licença
-
-Projeto acadêmico desenvolvido para fins educacionais.
+├── grupo5-guard.ia/
+├── LICENSE
+└── README.md
