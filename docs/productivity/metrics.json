@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-15T12:08:52.598485+00:00",
+  "generated_at": "2026-05-15T12:14:07.845512+00:00",
   "repo": "unb-mds/2026-1-Guard.IA",
   "branches": [
     "dev-projeto",
     "estudos"
   ],
   "summary": {
-    "total_commits": 211,
+    "total_commits": 214,
     "open_issues": 6,
     "closed_issues": 16,
     "contributors": 9,
@@ -15,10 +15,10 @@
   "branches_data": {
     "dev-projeto": {
       "branch": "dev-projeto",
-      "total_commits": 147,
+      "total_commits": 150,
       "commits_per_author": {
-        "PajeMurici-dev": 17,
-        "github-actions[bot]": 1,
+        "PajeMurici-dev": 19,
+        "github-actions[bot]": 2,
         "lucasnferreiradev-lang": 15,
         "AlmondHare": 6,
         "gabiiverissimo-dev": 12,
@@ -86,10 +86,31 @@
         },
         {
           "date": "2026-05-15",
-          "count": 6
+          "count": 9
         }
       ],
       "recent_commits": [
+        {
+          "sha": "de90c13",
+          "author": "PajeMurici-dev",
+          "date": "2026-05-15T12:13:06+00:00",
+          "message": "Merge branch 'dev-projeto' of https://github.com/unb-mds/2026-1-Guard.IA into dev-projeto",
+          "char_count": 89
+        },
+        {
+          "sha": "a4b0141",
+          "author": "PajeMurici-dev",
+          "date": "2026-05-15T12:12:21+00:00",
+          "message": "feat: adiciona docker compose para subir o banco postgreSQL",
+          "char_count": 59
+        },
+        {
+          "sha": "00302f9",
+          "author": "github-actions[bot]",
+          "date": "2026-05-15T12:08:52+00:00",
+          "message": "chore: update productivity metrics [skip ci]",
+          "char_count": 44
+        },
         {
           "sha": "5431337",
           "author": "PajeMurici-dev",
@@ -348,27 +369,6 @@
           "date": "2026-04-27T00:15:26+00:00",
           "message": "Fix formatting of task list in sprint planning document",
           "char_count": 55
-        },
-        {
-          "sha": "b121160",
-          "author": "claranunes22",
-          "date": "2026-04-27T00:13:28+00:00",
-          "message": "Adiciona Sprint Planning daSprint 04",
-          "char_count": 36
-        },
-        {
-          "sha": "b86fe5c",
-          "author": "claranunes22",
-          "date": "2026-04-27T00:13:28+00:00",
-          "message": "Adiciona Sprint Planning daSprint 04",
-          "char_count": 36
-        },
-        {
-          "sha": "a4b2e5d",
-          "author": "claranunes22",
-          "date": "2026-04-26T23:59:01+00:00",
-          "message": "Atualiza documento Sprint Planning",
-          "char_count": 34
         }
       ]
     },
@@ -1119,8 +1119,8 @@
     }
   ],
   "all_authors": {
-    "PajeMurici-dev": 24,
-    "github-actions[bot]": 1,
+    "PajeMurici-dev": 26,
+    "github-actions[bot]": 2,
     "lucasnferreiradev-lang": 15,
     "AlmondHare": 8,
     "gabiiverissimo-dev": 16,
