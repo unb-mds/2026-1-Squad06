@@ -1,23 +1,24 @@
 {
-  "generated_at": "2026-05-15T12:05:17.041598+00:00",
+  "generated_at": "2026-05-15T12:08:52.598485+00:00",
   "repo": "unb-mds/2026-1-Guard.IA",
   "branches": [
     "dev-projeto",
     "estudos"
   ],
   "summary": {
-    "total_commits": 208,
+    "total_commits": 211,
     "open_issues": 6,
     "closed_issues": 16,
-    "contributors": 8,
+    "contributors": 9,
     "open_prs": 0
   },
   "branches_data": {
     "dev-projeto": {
       "branch": "dev-projeto",
-      "total_commits": 144,
+      "total_commits": 147,
       "commits_per_author": {
-        "PajeMurici-dev": 15,
+        "PajeMurici-dev": 17,
+        "github-actions[bot]": 1,
         "lucasnferreiradev-lang": 15,
         "AlmondHare": 6,
         "gabiiverissimo-dev": 12,
@@ -85,10 +86,31 @@
         },
         {
           "date": "2026-05-15",
-          "count": 3
+          "count": 6
         }
       ],
       "recent_commits": [
+        {
+          "sha": "5431337",
+          "author": "PajeMurici-dev",
+          "date": "2026-05-15T12:07:20+00:00",
+          "message": "Merge branch 'dev-projeto' of https://github.com/unb-mds/2026-1-Guard.IA into dev-projeto",
+          "char_count": 89
+        },
+        {
+          "sha": "421c519",
+          "author": "PajeMurici-dev",
+          "date": "2026-05-15T12:06:29+00:00",
+          "message": "feat: Implementa a tabela schema para o armazenamento",
+          "char_count": 53
+        },
+        {
+          "sha": "2181a3c",
+          "author": "github-actions[bot]",
+          "date": "2026-05-15T12:05:17+00:00",
+          "message": "chore: update productivity metrics [skip ci]",
+          "char_count": 44
+        },
         {
           "sha": "160c054",
           "author": "PajeMurici-dev",
@@ -347,27 +369,6 @@
           "date": "2026-04-26T23:59:01+00:00",
           "message": "Atualiza documento Sprint Planning",
           "char_count": 34
-        },
-        {
-          "sha": "94215c9",
-          "author": "claranunes22",
-          "date": "2026-04-26T23:59:01+00:00",
-          "message": "Atualiza documento Sprint Planning",
-          "char_count": 34
-        },
-        {
-          "sha": "55e5420",
-          "author": "otaviotex",
-          "date": "2026-04-26T23:07:59+00:00",
-          "message": "modificacao: Classificacao de Proposicoes por Tema (Objetivos e Funcionalidades)",
-          "char_count": 80
-        },
-        {
-          "sha": "712287a",
-          "author": "otaviotex",
-          "date": "2026-04-26T23:07:59+00:00",
-          "message": "modificacao: Classificacao de Proposicoes por Tema (Objetivos e Funcionalidades)",
-          "char_count": 80
         }
       ]
     },
@@ -1118,7 +1119,8 @@
     }
   ],
   "all_authors": {
-    "PajeMurici-dev": 22,
+    "PajeMurici-dev": 24,
+    "github-actions[bot]": 1,
     "lucasnferreiradev-lang": 15,
     "AlmondHare": 8,
     "gabiiverissimo-dev": 16,
