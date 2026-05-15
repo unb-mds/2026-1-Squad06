@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76968ef413191391c0b404a6c648141a249d142d
 # 🛡️ Guard.IA - Monitoramento Legislativo Inteligente
 
 O **Guard.IA** é uma plataforma de inteligência de dados projetada para monitorar, filtrar e classificar proposições legislativas (Câmara e Senado) que impactam a proteção da infância e adolescência.
@@ -34,6 +37,7 @@ python -m venv venv
 source venv/bin/activate
 
 # Instalar dependências
+<<<<<<< HEAD
 pip install -r grupo5-guard.ia/dashboard/requirements.txt
 =======
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
@@ -138,3 +142,6 @@ O projeto busca apoiar análises sobre segurança digital, legislação e polít
 ├── LICENSE
 └── README.md
 >>>>>>> 10acd005c09734d2d32f040b3dce7f900b3fa932
+=======
+pip install -r grupo5-guard.ia/dashboard/requirements.txt
+>>>>>>> 76968ef413191391c0b404a6c648141a249d142d
