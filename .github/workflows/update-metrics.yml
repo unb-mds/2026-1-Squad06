@@ -15,11 +15,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout main
         uses: actions/checkout@v4
         with:
-        run: main
-        fetch-dept: 0
+          ref: main        
+          fetch-depth: 0   
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -43,4 +43,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/productivity/metrics.json
           git diff --cached --quiet || git commit -m "chore: update productivity metrics [skip ci]"
-          git push
+          git push origin main
