@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-15T20:05:52.698753+00:00",
+  "generated_at": "2026-05-16T18:58:42.551064+00:00",
   "repo": "unb-mds/2026-1-Guard.IA",
   "branches": [
     "dev-projeto",
     "estudos"
   ],
   "summary": {
-    "total_commits": 218,
+    "total_commits": 220,
     "open_issues": 10,
     "closed_issues": 16,
     "contributors": 9,
@@ -15,10 +15,10 @@
   "branches_data": {
     "dev-projeto": {
       "branch": "dev-projeto",
-      "total_commits": 154,
+      "total_commits": 156,
       "commits_per_author": {
-        "lucasnferreiradev-lang": 16,
-        "github-actions[bot]": 4,
+        "lucasnferreiradev-lang": 17,
+        "github-actions[bot]": 5,
         "LucasNF-Dev": 3,
         "PajeMurici-dev": 19,
         "AlmondHare": 6,
@@ -86,10 +86,28 @@
         },
         {
           "date": "2026-05-15",
-          "count": 13
+          "count": 14
+        },
+        {
+          "date": "2026-05-16",
+          "count": 1
         }
       ],
       "recent_commits": [
+        {
+          "sha": "9a2fc80",
+          "author": "lucasnferreiradev-lang",
+          "date": "2026-05-16T18:56:32+00:00",
+          "message": "docs(gemini): update architectural guidelines with authentication and security rules",
+          "char_count": 84
+        },
+        {
+          "sha": "5360436",
+          "author": "github-actions[bot]",
+          "date": "2026-05-15T20:05:52+00:00",
+          "message": "chore: update productivity metrics [skip ci]",
+          "char_count": 44
+        },
         {
           "sha": "b1c0de0",
           "author": "lucasnferreiradev-lang",
@@ -355,20 +373,6 @@
           "date": "2026-04-28T22:51:11+00:00",
           "message": "refactor: reestruturar diretório",
           "char_count": 32
-        },
-        {
-          "sha": "0b68f2d",
-          "author": "claranunes22",
-          "date": "2026-04-27T00:19:38+00:00",
-          "message": "atualiza sprint planning",
-          "char_count": 24
-        },
-        {
-          "sha": "36a8cb3",
-          "author": "claranunes22",
-          "date": "2026-04-27T00:19:38+00:00",
-          "message": "atualiza sprint planning",
-          "char_count": 24
         }
       ]
     },
@@ -1153,8 +1157,8 @@
     }
   ],
   "all_authors": {
-    "lucasnferreiradev-lang": 16,
-    "github-actions[bot]": 4,
+    "lucasnferreiradev-lang": 17,
+    "github-actions[bot]": 5,
     "LucasNF-Dev": 4,
     "PajeMurici-dev": 26,
     "AlmondHare": 8,
