@@ -34,10 +34,17 @@ O sistema é focado em cidadãos, pesquisadores, jornalistas e profissionais int
 11. O banco de dados PostgreSQL é de responsabilidade exclusiva da etapa de Armazenamento.
 12. Nenhuma etapa deve ler ou escrever no arquivo de outra etapa diretamente.
 
+### Acesso e Autenticação
+
+15. Usuários não cadastrados podem visualizar apenas um preview da página inicial (um gráfico ou trecho do mapa).
+16. Acesso completo ao dashboard, tabelas, filtros e demais páginas exige cadastro e login.
+17. Senhas nunca devem ser armazenadas em texto puro — sempre usar hash.
+18. O CRUD de usuários é responsabilidade exclusiva do módulo `back/armazenamento/usuarios.py`.
+
 ### Ética e Transparência
 
-13. Toda classificação gerada pela IA deve deixar explícito que se trata de uma estimativa — nunca apresentar como fato absoluto.
-14. O campo `confianca` deve sempre acompanhar o campo `categoria` na visualização.
+19. Toda classificação gerada pela IA deve deixar explícito que se trata de uma estimativa — nunca apresentar como fato absoluto.
+20. O campo `confianca` deve sempre acompanhar o campo `categoria` na visualização.
 
 ---
 
@@ -48,6 +55,7 @@ O sistema é focado em cidadãos, pesquisadores, jornalistas e profissionais int
 | Coleta, Filtro, Classificação, Armazenamento | Python 3.10+ |
 | Banco de dados | PostgreSQL |
 | Dashboard | Streamlit + Plotly |
+| Autenticação | bcrypt (hash de senha) |
 | Infraestrutura | Docker + GitHub Actions |
 | Gerenciamento de dependências | pip + requirements.txt |
 
@@ -104,7 +112,8 @@ Este é o schema padrão que todas as etapas devem respeitar. Nunca altere os no
 │   │   └── classificador.py
 │   └── armazenamento/
 │       ├── __init__.py
-│       └── armazenamento.py
+│       ├── armazenamento.py   ← proposições
+│       └── usuarios.py        ← CRUD de usuários
 ├── front/
 │   └── dashboard.py
 ├── data/
@@ -152,10 +161,18 @@ Este é o schema padrão que todas as etapas devem respeitar. Nunca altere os no
 - Sempre verificar duplicatas por `id_externo` antes de inserir
 - Docker obrigatório para subir o banco localmente
 
+### Usuários
+- Arquivo responsável: `back/armazenamento/usuarios.py`
+- Senhas armazenadas com hash via `bcrypt`
+- Funções obrigatórias: `criar_usuario`, `buscar_por_email`, `verificar_senha`, `deletar_usuario`
+- Nunca retornar `senha_hash` em consultas de listagem
+
 ### Dashboard
 - Framework: Streamlit
 - Gráficos: Plotly
 - Sempre usar `@st.cache_data` em funções que consultam o banco
+- Usuário não logado: vê apenas preview da página inicial (um gráfico ou trecho do mapa)
+- Usuário logado: acesso completo a todas as páginas e funcionalidades
 
 ---
 
@@ -203,6 +220,14 @@ CREATE TABLE proposicoes (
     confianca         FLOAT,
     coletado_em       TIMESTAMP DEFAULT NOW()
 );
+
+CREATE TABLE usuarios (
+    id                SERIAL PRIMARY KEY,
+    nome              VARCHAR(100) NOT NULL,
+    email             VARCHAR(150) UNIQUE NOT NULL,
+    senha_hash        VARCHAR(255) NOT NULL,
+    criado_em         TIMESTAMP DEFAULT NOW()
+);
 ```
 
 ---
@@ -229,12 +254,15 @@ Funcionalidades obrigatórias para a Release 1:
 - [x] Coleta da Câmara funcionando com paginação e checkpoint
 - [x] Coleta do Senado funcionando com cursor por data e checkpoint
 - [ ] Filtro por palavras-chave com normalização de texto
-- [ ] Armazenamento no PostgreSQL com deduplicação
-- [ ] Dashboard básico com pelo menos 2 visualizações
+- [ ] Armazenamento no PostgreSQL — tabela `proposicoes` com deduplicação
+- [ ] CRUD de usuários — tabela `usuarios` com hash de senha
+- [ ] Páginas de login e cadastro integradas com o banco
+- [ ] Página inicial com preview para usuário não logado
+- [ ] Dashboard básico com pelo menos 1 visualização para usuário logado
 
 **Fora do escopo da Release 1:**
 - Classificação por IA (Release 2)
-- Dashboard completo (Release 2)
+- Dashboard completo com todos os gráficos (Release 2)
 - Coleta incremental automática via GitHub Actions (Release 2)
 - Preenchimento de `autor`, `partido` e `estado` (Release 2)
 
@@ -261,6 +289,8 @@ A menos que explicitamente solicitado, **não faça**:
 - Salvar dados por item dentro de loops (sempre batch saving)
 - Fazer chamadas extras à API por proposição (fetch_detalhes está removido intencionalmente)
 - Modificar arquivos de outras etapas sem alinhamento com o responsável
+- Armazenar senhas em texto puro
+- Retornar `senha_hash` em consultas de listagem de usuários
 
 ---
 
