@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-15T12:14:07.845512+00:00",
+  "generated_at": "2026-05-16T18:58:42.551064+00:00",
   "repo": "unb-mds/2026-1-Guard.IA",
   "branches": [
     "dev-projeto",
     "estudos"
   ],
   "summary": {
-    "total_commits": 214,
-    "open_issues": 6,
+    "total_commits": 220,
+    "open_issues": 10,
     "closed_issues": 16,
     "contributors": 9,
     "open_prs": 0
@@ -15,16 +15,16 @@
   "branches_data": {
     "dev-projeto": {
       "branch": "dev-projeto",
-      "total_commits": 150,
+      "total_commits": 156,
       "commits_per_author": {
+        "lucasnferreiradev-lang": 17,
+        "github-actions[bot]": 5,
+        "LucasNF-Dev": 3,
         "PajeMurici-dev": 19,
-        "github-actions[bot]": 2,
-        "lucasnferreiradev-lang": 15,
         "AlmondHare": 6,
         "gabiiverissimo-dev": 12,
         "claranunes22": 82,
         "otaviotex": 10,
-        "LucasNF-Dev": 2,
         "RochaCarla": 2
       },
       "commit_timeline": [
@@ -86,10 +86,56 @@
         },
         {
           "date": "2026-05-15",
-          "count": 9
+          "count": 14
+        },
+        {
+          "date": "2026-05-16",
+          "count": 1
         }
       ],
       "recent_commits": [
+        {
+          "sha": "9a2fc80",
+          "author": "lucasnferreiradev-lang",
+          "date": "2026-05-16T18:56:32+00:00",
+          "message": "docs(gemini): update architectural guidelines with authentication and security rules",
+          "char_count": 84
+        },
+        {
+          "sha": "5360436",
+          "author": "github-actions[bot]",
+          "date": "2026-05-15T20:05:52+00:00",
+          "message": "chore: update productivity metrics [skip ci]",
+          "char_count": 44
+        },
+        {
+          "sha": "b1c0de0",
+          "author": "lucasnferreiradev-lang",
+          "date": "2026-05-15T20:05:14+00:00",
+          "message": "docs: add GEMINI.md with architectural context",
+          "char_count": 46
+        },
+        {
+          "sha": "d5c9bc5",
+          "author": "github-actions[bot]",
+          "date": "2026-05-15T19:40:41+00:00",
+          "message": "chore: update productivity metrics [skip ci]",
+          "char_count": 44
+        },
+        {
+          "sha": "c8d9af0",
+          "author": "LucasNF-Dev",
+          "date": "2026-05-15T19:40:01+00:00",
+          "message": "Update README.md",
+          "char_count": 16
+        },
+        {
+          "sha": "57624ed",
+          "author": "github-actions[bot]",
+          "date": "2026-05-15T12:14:07+00:00",
+          "message": "chore: update productivity metrics [skip ci]",
+          "char_count": 44
+        },
         {
           "sha": "de90c13",
           "author": "PajeMurici-dev",
@@ -327,48 +373,6 @@
           "date": "2026-04-28T22:51:11+00:00",
           "message": "refactor: reestruturar diretório",
           "char_count": 32
-        },
-        {
-          "sha": "0b68f2d",
-          "author": "claranunes22",
-          "date": "2026-04-27T00:19:38+00:00",
-          "message": "atualiza sprint planning",
-          "char_count": 24
-        },
-        {
-          "sha": "36a8cb3",
-          "author": "claranunes22",
-          "date": "2026-04-27T00:19:38+00:00",
-          "message": "atualiza sprint planning",
-          "char_count": 24
-        },
-        {
-          "sha": "a946744",
-          "author": "claranunes22",
-          "date": "2026-04-27T00:18:30+00:00",
-          "message": "atualiza sprint planning ",
-          "char_count": 85
-        },
-        {
-          "sha": "9d48f7f",
-          "author": "claranunes22",
-          "date": "2026-04-27T00:18:30+00:00",
-          "message": "atualiza sprint planning ",
-          "char_count": 85
-        },
-        {
-          "sha": "b952372",
-          "author": "claranunes22",
-          "date": "2026-04-27T00:15:26+00:00",
-          "message": "Fix formatting of task list in sprint planning document",
-          "char_count": 55
-        },
-        {
-          "sha": "e5b9769",
-          "author": "claranunes22",
-          "date": "2026-04-27T00:15:26+00:00",
-          "message": "Fix formatting of task list in sprint planning document",
-          "char_count": 55
         }
       ]
     },
@@ -727,8 +731,8 @@
     }
   },
   "issues": {
-    "total": 22,
-    "open": 6,
+    "total": 26,
+    "open": 10,
     "closed": 16,
     "timeline": [
       {
@@ -828,11 +832,45 @@
       },
       {
         "date": "2026-05-15",
-        "opened": 1,
+        "opened": 5,
         "closed": 0
       }
     ],
     "list": [
+      {
+        "number": 32,
+        "title": "Estudo sobre Context Engineering e Desenvolvimento Assistido por IA [SPRINT 06]",
+        "state": "open",
+        "created_at": "2026-05-15T19:25:10+00:00",
+        "closed_at": null,
+        "labels": []
+      },
+      {
+        "number": 31,
+        "title": "LLM [SPRINT 05]",
+        "state": "open",
+        "created_at": "2026-05-15T19:21:31+00:00",
+        "closed_at": null,
+        "labels": []
+      },
+      {
+        "number": 30,
+        "title": "DevOps [SPRINT 04]",
+        "state": "open",
+        "created_at": "2026-05-15T19:17:56+00:00",
+        "closed_at": null,
+        "labels": []
+      },
+      {
+        "number": 29,
+        "title": "Implementação de Módulo de Filtragem",
+        "state": "open",
+        "created_at": "2026-05-15T18:43:42+00:00",
+        "closed_at": null,
+        "labels": [
+          "documentation"
+        ]
+      },
       {
         "number": 28,
         "title": "Implementação do workflow de produtividade",
@@ -1119,14 +1157,14 @@
     }
   ],
   "all_authors": {
+    "lucasnferreiradev-lang": 17,
+    "github-actions[bot]": 5,
+    "LucasNF-Dev": 4,
     "PajeMurici-dev": 26,
-    "github-actions[bot]": 2,
-    "lucasnferreiradev-lang": 15,
     "AlmondHare": 8,
     "gabiiverissimo-dev": 16,
     "claranunes22": 126,
     "otaviotex": 15,
-    "LucasNF-Dev": 3,
     "RochaCarla": 3
   }
 }
