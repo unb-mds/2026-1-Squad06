@@ -31,5 +31,8 @@ ENV/
 .vscode/
 .idea/
 
+#SQLITE 
+*.db
+
 # Dados (Opcional: ignore se os JSONs ficarem muito grandes)
 # grupo5-guard.ia/data/*.json
