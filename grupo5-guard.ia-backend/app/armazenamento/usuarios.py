@@ -35,17 +35,19 @@ def buscar_por_email(email: str):
     Retorna um dicionário com os dados ou None.
     """
     query = "SELECT id, nome, email, senha_hash, criado_em FROM usuarios WHERE email = %s;"
-    result = execute_query(query, (email,), fetch=True)
-    
-    if result:
-        row = result[0]
-        return {
-            "id": row[0],
-            "nome": row[1],
-            "email": row[2],
-            "senha_hash": row[3],
-            "criado_em": row[4]
-        }
+    try:
+        result = execute_query(query, (email,), fetch=True)
+        if result:
+            row = result[0]
+            return {
+                "id": row[0],
+                "nome": row[1],
+                "email": row[2],
+                "senha_hash": row[3],
+                "criado_em": row[4]
+            }
+    except Exception as e:
+        print(f"Erro ao buscar por email {email}: {e}")
     return None
 
 def deletar_usuario(usuario_id: int) -> bool:

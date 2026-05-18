@@ -49,16 +49,19 @@ def execute_query(query, params=None, fetch=False):
     if not conn:
         return None
     
+    # Garante que as mudanças sejam visíveis imediatamente
+    conn.autocommit = True
+    
     try:
         with conn.cursor() as cursor:
             cursor.execute(query, params or ())
             if fetch:
                 result = cursor.fetchall()
                 return result
-            conn.commit()
     except Exception as e:
-        print(f"Erro na execução da query: {e}")
-        conn.rollback()
+        # conn.rollback()  # Não necessário com autocommit=True
+        print(f"ERRO SQL: {e}\nQuery: {query}\nParams: {params}")
+        raise e
     finally:
         release_connection(conn)
     return None
